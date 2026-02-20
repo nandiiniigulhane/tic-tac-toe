@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.status {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.square {
+  background: #f9fafb;
+  border: 2px solid #e5e7eb;
+  float: left;
+  font-size: 26px;
+  font-weight: 700;
+  height: 70px;
+  width: 70px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.square:hover {
+  background: #eef2ff;
+  transform: scale(1.05);
+  border-color: #6366f1;
+}
+
+.square:active {
+  transform: scale(0.95);
+}
+
+.game-info {
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.game-info ol {
+  padding-left: 18px;
+}
+
+.game-info button {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.game-info button:hover {
+  background: #4f46e5;
+}
