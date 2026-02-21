@@ -2,6 +2,8 @@
 
 A simple **React + Vite + TypeScript** implementation of the classic Tic-Tac-Toe game.
 
+---
+
 ## Features
 
 - Two-player gameplay
@@ -41,7 +43,9 @@ http://localhost:5173
 
 ---
 
-## Running with Docker
+# Docker
+
+This project includes a Dockerfile to run the application inside a container.
 
 ### Build Docker image
 
@@ -63,7 +67,37 @@ http://localhost:8080
 
 ---
 
-## Production Build
+# Docker Compose
+
+Docker Compose allows you to start the application with a single command.
+
+### Run the application using Docker Compose
+
+```bash
+docker compose up --build
+```
+
+### Run in detached mode
+
+```bash
+docker compose up -d
+```
+
+### Stop the containers
+
+```bash
+docker compose down
+```
+
+Open the application:
+
+```
+http://localhost:8080
+```
+
+---
+
+# Production Build
 
 To build the optimized production version:
 
@@ -79,14 +113,13 @@ npm run preview
 
 ---
 
----
-
 ## Tech Stack
 
 - React
 - TypeScript
 - Vite
 - Docker
+- Docker Compose
 - Nginx (for production container)
 
 ---
